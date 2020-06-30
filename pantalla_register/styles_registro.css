@@ -99,3 +99,17 @@ section p > a:hover{
 .footer a:hover{
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 600px){
+  .register_container{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+  .footer{
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+}
