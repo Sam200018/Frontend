@@ -1,6 +1,6 @@
 $blanco: white;
 $verde: green;
-
+body {overflow-x:hidden!important;}
 body {
   margin: 0;
   background-color: #8e57ed;
@@ -86,14 +86,13 @@ ul:hover {
 ::placeholder {
   color: white;
 }
-.carousel {
+.carousel{
   width: 100%;
-  overflow: scroll;
+  overflow-x: scroll;
+  scrollbar-color: palegreen palegreen;
+  scrollbar-width: none;
   padding: 30px;
   position: relative; /*Todos los elementos de él se va a colocar en relacion al padre */
-}
-.carousel::-webkit-scrollbar{
-  width: 0 !important;
 }
 .carousel_container {
   white-space: nowrap;
@@ -155,4 +154,37 @@ ul:hover {
 }
 .carousel-item_details:hover {
   opacity: 1;
+}
+.carousel-item_details img{
+  width: 15px;
+  height: 15px;
+  margin-top: 180px;
+}
+.carousel-item_detalis--title{
+  color: white;
+  margin: 2px 0 0 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+.carousel-item_detalis--subtitle{
+  color: white;
+  margin: 0;
+  font-size: 9px;
+}
+.footer {
+  // background-color: #ab88ff;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
 }
